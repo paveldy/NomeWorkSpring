@@ -1,8 +1,13 @@
+package geekbrains.service;
+
+import org.springframework.context.annotation.Bean;
+import org.springframework.stereotype.Component;
+
 import java.util.HashMap;
 import java.util.Map;
-
+@Component
 public class ProductRepository {
-//    public Product product;
+//    public Application.Product product;
 //    public int ID;
     HashMap<Integer, Product> map = new HashMap<>();
 

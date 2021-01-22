@@ -21,10 +21,21 @@
         <maven.compiler.target>11</maven.compiler.target>
     </properties>
 
+
     <dependencies>
+
+
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter</artifactId>
+            <exclusions>
+                <exclusion>
+                    <groupId>org.springframework</groupId>
+                    <artifactId>spring-asm</artifactId>
+                </exclusion>
+            </exclusions>
+
+
         </dependency>
 
         <dependency>

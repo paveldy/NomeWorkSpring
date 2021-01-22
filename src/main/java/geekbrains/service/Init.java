@@ -1,11 +1,16 @@
-import org.springframework.beans.factory.annotation.Autowired;
+package geekbrains.service;
+
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.stereotype.Component;
 
 @Component
 public class Init implements CommandLineRunner {
-    @Autowired
-    private ProductRepository productRepository;
+//    @Autowired
+
+    private final ProductRepository productRepository;
+    public Init(ProductRepository productRepository){
+        this.productRepository=productRepository;
+    }
 
     @Override
     public void run(String... args) throws Exception {
