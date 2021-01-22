@@ -2,6 +2,7 @@ package geekbrains.service;
 
 public class Product {
 
+
     public String name;
     public Integer ID;
     public long price;
